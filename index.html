@@ -1,439 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Axel Servicios Digitales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel Servicios Digitales</title>
 
-<style>
+    <!-- Fuente Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-/* ====== ESTILO GENERAL ====== */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
 
-/* ====== HEADER ====== */
-header {
-    background-color: #111;
-    text-align: center;
-    padding: 50px 20px;
-}
+        header {
+            background-color: #111;
+            text-align: center;
+            padding: 60px 20px;
+        }
 
-header h1 {
-    font-size: 40px;
-    margin: 0;
-}
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
 
-header p {
-    color: #ccc;
-    margin-top: 10px;
-}
+        header p {
+            color: #ccc;
+        }
 
-/* ====== SECCIONES ====== */
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
+        .boton {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
 
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        .boton:hover {
+            background-color: #000000;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
 
-/* ====== TARJETAS SERVICIO ====== */
-.servicio {
-    background-color: #111;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    border: 1px solid #222;
-    text-align: center;
-    transition: 0.3s;
-}
+        .seccion {
+            padding: 100px 20px;
+            text-align: center;
+        }
 
-.servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(255,255,255,0.05);
-}
+        .fondo-gris {
+            background-color: #111;
+        }
 
-.servicio img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
+        .contenedor {
+            max-width: 900px;
+            margin: auto;
+        }
 
-/* ====== BOTÓN NORMAL ====== */
-.boton {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding: 15px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: 0.3s;
-}
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
 
-.boton:hover {
-    background-color: #ccc;
-}
-
-/* ====== BOTÓN FLOTANTE WHATSAPP ====== */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    text-decoration: none;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-    z-index: 1000;
-    transition: 0.3s;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-</style>
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <h1>Axel Servicios Digitales</h1>
-    <p>Páginas web • Soporte • Tecnología • Diseño</p>
+    <p>Diseño páginas web modernas para negocios que quieren vender más.</p>
 </header>
-    <section style="text-align:center; padding:60px 20px;">
-    <h2 style="font-size:32px;">
-        Creo páginas web profesionales que ayudan a negocios a vender más.
-    </h2>
-    <p style="color:#ccc; max-width:700px; margin:auto;">
-        Diseño moderno, optimizado para celular y listo para recibir clientes desde el primer día.
-        Entrega rápida y atención personalizada.
-    </p>
-    <br>
-    <a href="https://wa.me/525951070435" target="_blank" class="boton">
-        Quiero mi página web
-    </a>
+
+<section class="seccion">
+    <div class="contenedor">
+        <h2>
+            Diseñamos páginas web modernas que convierten visitantes en clientes.
+        </h2>
+        <p>
+            Diseño profesional, optimizado para celular y listo para atraer clientes desde el primer día.
+        </p>
+        <br><br>
+        <a href="https://wa.me/525951070435" target="_blank" class="boton">
+            Quiero mi página web
+        </a>
+    </div>
 </section>
 
-<section>
-    <h2>📁 Portafolio</h2>
-
-<section id="precios">
-
-    <h2>💰 Planes y Precios</h2>
-
-    <div class="planes">
-
-        <div class="plan">
-            <h3>🥉 Página Básica</h3>
-            <p>Ideal para emprendedores que están comenzando.</p>
-            <ul style="list-style:none; padding:0;">
-                <li>✔ 1 sección informativa</li>
-                <li>✔ Diseño adaptable a celular</li>
-                <li>✔ Botón WhatsApp</li>
-                <li>✔ Entrega en 2-3 días</li>
-            </ul>
-            <div class="precio">$1,500 MXN</div>
-            <a href="https://wa.me/525951070435" target="_blank" class="boton">
-                Solicitar ahora
-            </a>
-            </div>  <!-- cierre del plan -->
-        
-                <section style="padding:60px 20px; text-align:center;">
-    <h2>⭐ Lo que dicen mis clientes</h2>
-
-    <div style="max-width:700px; margin:auto; background:#111; padding:30px; border-radius:12px; border:1px solid #222;">
+<section class="seccion fondo-gris">
+    <div class="contenedor">
+        <h2>🚀 ¿Por qué elegir nuestros servicios?</h2>
         <p>
-            "Excelente servicio, mi negocio ahora se ve más profesional y recibo más mensajes por WhatsApp."
+            No solo creamos páginas web. Creamos herramientas digitales que trabajan para tu negocio 24/7.
+            Entrega rápida, diseño moderno y enfoque en generar clientes reales.
+        </p>
+    </div>
+</section>
+
+<section class="seccion">
+    <div class="contenedor">
+        <h2>💬 Lo que dicen nuestros clientes</h2>
+        <p>
+            "Excelente servicio, ahora mi negocio se ve más profesional y recibo más mensajes por WhatsApp."
         </p>
         <strong>- Cliente satisfecho</strong>
     </div>
 </section>
-            </a>
-        </div>
 
-        <div class="plan recomendado">
-            <h3>🥈 Página Profesional</h3>
-            <p>Perfecta para negocios establecidos.</p>
-            <ul style="list-style:none; padding:0;">
-                <li>✔ Hasta 5 secciones</li>
-                <li>✔ Diseño personalizado</li>
-                <li>✔ Galería de imágenes</li>
-                <li>✔ Integración redes sociales</li>
-            </ul>
-            <div class="precio">$3,500 MXN</div>
-            <a href="https://wa.me/525951070435" target="_blank" class="boton">
-                Solicitar ahora
-            </a>
-        </div>
-
-        <div class="plan">
-            <h3>🥇 Página Premium</h3>
-            <p>Para empresas que quieren destacar.</p>
-            <ul style="list-style:none; padding:0;">
-                <li>✔ Diseño completamente personalizado</li>
-                <li>✔ Animaciones modernas</li>
-                <li>✔ Formulario profesional</li>
-                <li>✔ Soporte 30 días</li>
-            </ul>
-            <div class="precio">$7,000 MXN</div>
-            <a href="https://wa.me/525951070435" target="_blank" class="boton">
-                Solicitar ahora
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-    <div class="servicio">
-        <strong>Diseño gráfico</strong>
-        <p>Logotipos y contenido visual profesional.</p>
-        <img src="diseno1.jpg" alt="Diseño gráfico">
-    </div>
-
-    <div class="servicio">
-        <strong>Redes sociales</strong>
-        <p>Diseño y gestión de contenido para Instagram y Facebook.</p>
-        <img src="redes1.jpg" alt="Redes sociales">
-    </div>
-
-    <div class="servicio">
-        <strong>Páginas web</strong>
-        <p>Desarrollo de sitios modernos y adaptables a celular.</p>
-        <img src="web1.jpg" alt="Páginas web">
-    </div>
-
-    <div style="text-align:center;">
-        <a href="https://wa.me/525951070435" class="boton" target="_blank">
-            Enviar mensaje
+<section class="seccion fondo-gris">
+    <div class="contenedor">
+        <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
+        <br>
+        <a href="https://wa.me/525951070435" target="_blank" class="boton">
+            Solicitar información
         </a>
     </div>
-
 </section>
-
-<!-- Botón flotante WhatsApp -->
-<a href="https://wa.me/525951070435" class="whatsapp-float" target="_blank">
-    💬
-</a>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Axel Servicios Digitales</title>
-
-<style>
-    #precios {
-    padding: 60px 20px;
-}
-
-#precios h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.planes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.plan {
-    background-color: #111;
-    border: 1px solid #222;
-    border-radius: 12px;
-    padding: 30px;
-    width: 300px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.plan:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(255,255,255,0.05);
-}
-
-.plan h3 {
-    margin-top: 0;
-}
-
-.precio {
-    font-size: 28px;
-    margin: 20px 0;
-    font-weight: bold;
-    color: #25D366;
-}
-
-.recomendado {
-    border: 2px solid #25D366;
-}
-
-/* ====== ESTILO GENERAL ====== */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-}
-
-/* ====== HEADER ====== */
-header {
-    background-color: #111;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-header h1 {
-    font-size: 40px;
-    margin: 0;
-}
-
-header p {
-    color: #ccc;
-    margin-top: 10px;
-}
-
-/* ====== SECCIONES ====== */
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* ====== TARJETAS SERVICIO ====== */
-.servicio {
-    background-color: #111;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    border: 1px solid #222;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(255,255,255,0.05);
-}
-
-.servicio img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-/* ====== BOTÓN NORMAL ====== */
-.boton {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding: 15px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-.boton:hover {
-    background-color: #ccc;
-}
-
-/* ====== BOTÓN FLOTANTE WHATSAPP ====== */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    text-decoration: none;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-    z-index: 1000;
-    transition: 0.3s;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>Axel Servicios Digitales</h1>
-    <p>Páginas web • Soporte • Tecnología • Diseño</p>
-</header>
-
-<section>
-    <h2>📁 Portafolio</h2>
-
-    <div class="servicio">
-        <strong>Diseño gráfico</strong>
-        <p>Logotipos y contenido visual profesional.</p>
-        <img src="diseno1.jpg" alt="Diseño gráfico">
-    </div>
-
-    <div class="servicio">
-        <strong>Redes sociales</strong>
-        <p>Diseño y gestión de contenido para Instagram y Facebook.</p>
-        <img src="redes1.jpg" alt="Redes sociales">
-    </div>
-
-    <div class="servicio">
-        <strong>Páginas web</strong>
-        <p>Desarrollo de sitios modernos y adaptables a celular.</p>
-        <img src="web1.jpg" alt="Páginas web">
-    </div>
-
-    <div style="text-align:center;">
-        <a href="https://wa.me/525951070435" class="boton" target="_blank">
-            Enviar mensaje
-        </a>
-    </div>
-
-</section>
-
-<!-- Botón flotante WhatsApp -->
-<a href="https://wa.me/525951070435" class="whatsapp-float" target="_blank">
-    💬
-</a>
 
 </body>
 </html>
