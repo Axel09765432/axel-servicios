@@ -122,6 +122,61 @@ h2 {
 <section>
     <h2>📁 Portafolio</h2>
 
+<section id="precios">
+
+    <h2>💰 Planes y Precios</h2>
+
+    <div class="planes">
+
+        <div class="plan">
+            <h3>🥉 Página Básica</h3>
+            <p>Ideal para emprendedores que están comenzando.</p>
+            <ul style="list-style:none; padding:0;">
+                <li>✔ 1 sección informativa</li>
+                <li>✔ Diseño adaptable a celular</li>
+                <li>✔ Botón WhatsApp</li>
+                <li>✔ Entrega en 2-3 días</li>
+            </ul>
+            <div class="precio">$1,500 MXN</div>
+            <a href="https://wa.me/525951070435" target="_blank" class="boton">
+                Solicitar ahora
+            </a>
+        </div>
+
+        <div class="plan recomendado">
+            <h3>🥈 Página Profesional</h3>
+            <p>Perfecta para negocios establecidos.</p>
+            <ul style="list-style:none; padding:0;">
+                <li>✔ Hasta 5 secciones</li>
+                <li>✔ Diseño personalizado</li>
+                <li>✔ Galería de imágenes</li>
+                <li>✔ Integración redes sociales</li>
+            </ul>
+            <div class="precio">$3,500 MXN</div>
+            <a href="https://wa.me/525951070435" target="_blank" class="boton">
+                Solicitar ahora
+            </a>
+        </div>
+
+        <div class="plan">
+            <h3>🥇 Página Premium</h3>
+            <p>Para empresas que quieren destacar.</p>
+            <ul style="list-style:none; padding:0;">
+                <li>✔ Diseño completamente personalizado</li>
+                <li>✔ Animaciones modernas</li>
+                <li>✔ Formulario profesional</li>
+                <li>✔ Soporte 30 días</li>
+            </ul>
+            <div class="precio">$7,000 MXN</div>
+            <a href="https://wa.me/525951070435" target="_blank" class="boton">
+                Solicitar ahora
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
     <div class="servicio">
         <strong>Diseño gráfico</strong>
         <p>Logotipos y contenido visual profesional.</p>
@@ -162,6 +217,51 @@ h2 {
 <title>Axel Servicios Digitales</title>
 
 <style>
+    #precios {
+    padding: 60px 20px;
+}
+
+#precios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan {
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.05);
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.precio {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #25D366;
+}
+
+.recomendado {
+    border: 2px solid #25D366;
+}
 
 /* ====== ESTILO GENERAL ====== */
 body {
