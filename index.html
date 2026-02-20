@@ -1,94 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axel Servicios Digitales</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axel Servicios Digitales</title>
 
-    <!-- Fuente Premium -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
+<style>
 
-        header {
-            background-color: #111;
-            text-align: center;
-            padding: 60px 20px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+body{
+    font-family:'Poppins',sans-serif;
+    background: radial-gradient(circle at top,#111 0%,#000 60%);
+    color:#fff;
+    overflow-x:hidden;
+}
 
-        header p {
-            color: #ccc;
-        }
+/* HEADER */
 
-        .boton {
-            display: inline-block;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 15px 35px;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-        }
+header{
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(135deg,#000,#111,#000);
+}
 
-        .boton:hover {
-            background-color: #000000;
-            color: #ffffff;
-            border: 2px solid #ffffff;
-        }
+header h1{
+    font-size:48px;
+    background:linear-gradient(90deg,#fff,#888);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
 
-        .seccion {
-            padding: 100px 20px;
-            text-align: center;
-        }
+header p{
+    margin-top:15px;
+    color:#aaa;
+}
 
-        .fondo-gris {
-            background-color: #111;
-        }
+/* BOTON */
 
-        .contenedor {
-            max-width: 900px;
-            margin: auto;
-        }
+.boton{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    background:linear-gradient(90deg,#ffffff,#cccccc);
+    color:#000;
+    transition:0.3s ease;
+}
 
-        h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
+.boton:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,255,255,0.6);
+}
 
-        p {
-            color: #ccc;
-            line-height: 1.6;
-        }
-    </style>
+/* SECCIONES */
+
+.seccion{
+    padding:100px 20px;
+    text-align:center;
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp 1s ease forwards;
+}
+
+.seccion:nth-of-type(1){animation-delay:.2s;}
+.seccion:nth-of-type(2){animation-delay:.4s;}
+.seccion:nth-of-type(3){animation-delay:.6s;}
+.seccion:nth-of-type(4){animation-delay:.8s;}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.contenedor{
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+p{
+    color:#bbb;
+    line-height:1.6;
+}
+
+/* TARJETAS PRECIOS */
+
+.precios{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    width:300px;
+    padding:35px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(255,255,255,0.2);
+}
+
+.card.destacado{
+    border:1px solid #fff;
+    box-shadow:0 0 30px rgba(255,255,255,0.4);
+}
+
+.precio{
+    font-size:30px;
+    font-weight:700;
+    margin:20px 0;
+}
+
+/* PORTAFOLIO */
+
+.portafolio{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:50px;
+}
+
+.portafolio img{
+    width:300px;
+    border-radius:20px;
+    transition:0.4s ease;
+}
+
+.portafolio img:hover{
+    transform:scale(1.07);
+    box-shadow:0 0 25px rgba(255,255,255,0.3);
+}
+
+/* FOOTER CTA */
+
+.cta{
+    background:linear-gradient(135deg,#111,#000);
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>Axel Servicios Digitales</h1>
-    <p>Diseño páginas web modernas para negocios que quieren vender más.</p>
+    <p>Diseño páginas web modernas que hacen crecer tu negocio.</p>
 </header>
 
 <section class="seccion">
     <div class="contenedor">
-        <h2>
-            Diseñamos páginas web modernas que convierten visitantes en clientes.
-        </h2>
-        <p>
-            Diseño profesional, optimizado para celular y listo para atraer clientes desde el primer día.
-        </p>
+        <h2>Convertimos visitantes en clientes</h2>
+        <p>Diseño profesional, optimizado para celular y enfocado en resultados.</p>
         <br><br>
         <a href="https://wa.me/525951070435" target="_blank" class="boton">
             Quiero mi página web
@@ -96,30 +181,63 @@
     </div>
 </section>
 
-<section class="seccion fondo-gris">
+<section class="seccion">
     <div class="contenedor">
-        <h2>🚀 ¿Por qué elegir nuestros servicios?</h2>
-        <p>
-            No solo creamos páginas web. Creamos herramientas digitales que trabajan para tu negocio 24/7.
-            Entrega rápida, diseño moderno y enfoque en generar clientes reales.
-        </p>
+        <h2>Planes y Precios</h2>
+
+        <div class="precios">
+
+            <div class="card">
+                <h3>Básico</h3>
+                <p class="precio">$1,500 MXN</p>
+                <p>✔ 1 sección</p>
+                <p>✔ Diseño responsive</p>
+                <p>✔ Botón WhatsApp</p>
+                <br>
+                <a href="https://wa.me/525951070435" class="boton">Elegir plan</a>
+            </div>
+
+            <div class="card destacado">
+                <h3>Profesional</h3>
+                <p class="precio">$3,500 MXN</p>
+                <p>✔ Hasta 5 secciones</p>
+                <p>✔ Diseño personalizado</p>
+                <p>✔ Integración redes</p>
+                <p>✔ Optimización móvil</p>
+                <br>
+                <a href="https://wa.me/525951070435" class="boton">Elegir plan</a>
+            </div>
+
+            <div class="card">
+                <h3>Premium</h3>
+                <p class="precio">$6,000 MXN</p>
+                <p>✔ Todo lo anterior</p>
+                <p>✔ Tienda básica</p>
+                <p>✔ Soporte 30 días</p>
+                <br>
+                <a href="https://wa.me/525951070435" class="boton">Elegir plan</a>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <section class="seccion">
     <div class="contenedor">
-        <h2>💬 Lo que dicen nuestros clientes</h2>
-        <p>
-            "Excelente servicio, ahora mi negocio se ve más profesional y recibo más mensajes por WhatsApp."
-        </p>
-        <strong>- Cliente satisfecho</strong>
+        <h2>Portafolio</h2>
+
+        <div class="portafolio">
+            <img src="web1.jpg" alt="Proyecto 1">
+            <img src="diseno1.jpg" alt="Proyecto 2">
+            <img src="redes1.jpg" alt="Proyecto 3">
+        </div>
     </div>
 </section>
 
-<section class="seccion fondo-gris">
+<section class="seccion cta">
     <div class="contenedor">
         <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
-        <br>
+        <br><br>
         <a href="https://wa.me/525951070435" target="_blank" class="boton">
             Solicitar información
         </a>
